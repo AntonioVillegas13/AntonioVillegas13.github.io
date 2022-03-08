@@ -1,0 +1,282 @@
+
+
+.text1{
+    width:100%;
+    height:80px;
+    background:#40D6D3;
+    top:0px;
+    position: fixed;
+    
+  }
+
+ 
+
+.container .app img.pequeña{
+    width: 30px;
+    height: 30px;
+    margin-left: 40%;
+}
+
+.container{
+    width: 80%;
+    max-width: 1208px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;    
+}
+
+.container .app{
+    width: 40%;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 5px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #fff;
+}
+
+.container .app:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .app img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.container .app h3{
+    font-weight: 500;
+    text-align: left;
+    margin-top: 10px;
+   
+}
+
+.container .app p{
+    padding: 0 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;     
+}
+
+
+.noma{
+    width:100%;
+    height:60px;
+    margin-top: 300px;
+    background:#40D6D3;
+    text-align: left;
+    
+}
+
+.noma img{
+    height: 55px;
+    width: 55px;
+    margin-top: 1px;
+    float: left;
+}
+
+.boton_1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0.8rem;
+    right: 0.7rem;
+    padding: 23px 23px;
+    background-image: url('img2/per.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.botonre{
+    position: relative;
+    top: 1.75rem;
+    right: -1.5rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 22px;
+    background-image: url('img2/apagar.png');
+    margin-right: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*----Ventana Emergente----------------------------------------------------------------------------------------*/
+body{
+    
+    
+    background:rgb(157, 240, 132);
+    background-image: url("img2/img3.jpg");
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 30px;
+     
+}
+
+.bloqueo1{
+    background: aqua;
+    padding: 10px 50px;
+    color: rgb(12, 47, 56);
+    font-weight: 50;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+}
+
+#show-modal:hover{
+    cursor: pointer;
+    background: rgb(48, 132, 134);
+}
+
+.modal{
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: 1;
+    /*z-index: 999999999;*/
+    background: rgba(0, 0,0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+/*Ventana*/
+.modal .content-modal{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: 0 1px 2px rgba(0, 0,0, 0.1);
+    border-radius: 10px;
+    /*z-index: 9999999;*/
+    z-index: 2;
+}
+
+.modal h2{
+    padding: 0.5em;
+    text-align: center;
+    background: #1E5D5D;
+    margin: 0;
+    color: white;
+   
+}
+
+.modal .conf{
+    height: 240px;
+    background: #081B1A;
+    border-radius: 10px;    
+}
+
+.modal .conf .items{
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+   
+}
+
+.perinput{
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#aceptarbloqueo{
+   
+    margin-left: 175px;
+    background: #1E5D5D;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.15s linear;
+    text-align: center;
+}
+
+#cancelar{
+    
+    margin-left: 7px;
+    background: #1E5D5D;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.15s linear;
+    text-align: center;
+}
+
+.close-modal{
+    color:white;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+
+.modal:target{
+    opacity: 1;
+    top: 0;
+}
+/*
+.modal .btn-close-modal{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+   
+}
+*/
+.modal:target .content-modal{
+    top: 50px;
+    transition: top 0.35s ease;
+}
+
+@media (max-width:796px){
+    .modal .content-modal{
+        width: 90%;
+        max-width: none;
+        left: 5%;
+        margin-left: 0;
+    }
+}
+
+.textobloque{
+    text-align: left;
+    
+}
